@@ -21,10 +21,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo With Provider',
       theme: appTheme,
-      home: ChangeNotifierProvider<Counter>(
-        create: (BuildContext context) => Counter(),
-        child: MyHomePage(title: 'Flutter Demo With Provider: '),
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) {
+          return ChangeNotifierProvider<Counter>(
+            create: (BuildContext context) => Counter(),
+            child: MyHomePage(title: 'Flutter Demo With Provider: '),
+          );
+        },
+      },
     );
   }
 }
