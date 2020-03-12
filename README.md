@@ -1,2 +1,2 @@
-# flutter_demo_with_provider
-A flutter provider study
+# The Flutter Demo, but with a provider
+A **study** on flutter
